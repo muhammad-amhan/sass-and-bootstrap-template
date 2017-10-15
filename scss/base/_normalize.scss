@@ -1,0 +1,134 @@
+
+
+// make the shake work
+// fix the nav bar 
+// fix the tab toggle
+// fix the other menu toggle
+// replace the search button with an icon
+// get a decent theme
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+}
+
+input, textarea, button {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.page-header {
+    margin-top: 10px;
+}
+
+.fix-margin-top {
+    margin-top: -50px;
+}
+
+
+.border-left {
+    @include border(1px, $dark-color, left);
+}
+
+
+.no-pad {
+    padding: 0;
+}
+
+.no-pad-top {
+    padding-top: 0;
+}
+
+.extra-pad {
+    padding: 30px 0;
+}
+
+.top-inner {
+    padding-top: 80px;
+}
+
+.pad-bottom {
+    padding-bottom: 15px;
+}
+
+.pad-top {
+    padding-top: 10px;
+}
+
+.pad-left {
+    padding-left: 10px;
+}
+
+.pad-right {
+    padding-right: 10px;
+}
+
+.pad-all {
+    padding: 10px;
+}
+
+
+.img-xsm {
+    width: 100px;
+}
+
+.img-sm {
+    width: 200px;
+}
+
+.img-md {
+    width: 400px;
+}
+
+.img-lg {
+    width: 400px;
+}
+
+.img-xlg {
+    width: 700px;
+}
+
+%transition {
+    -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-10px);
+    } 
+    20% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(-5px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}   
+
+.shake {
+    &:hover {
+        @include animate(shake, 1s, ease);  
+    }  
+}
+
+
+.fa-primary {
+    color: $fa-primary !important;
+}
+
+.fa-secondary {
+    color: $fa-secondary;
+}
+

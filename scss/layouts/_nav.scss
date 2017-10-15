@@ -1,0 +1,50 @@
+
+.navbar {
+    min-height: 50px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    @include border(1px, #e7e7e7, right-left);
+    @include border(1px, #e7e7e7, bottom);
+
+    a {
+        color: $primary-color !important;
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 15px !important;
+    }
+
+    li {
+        &:hover, &:hover > a {
+            background-color: $primary-color !important;
+            color: $light-color !important;
+        }
+    }
+
+    .navbar-brand {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .navbar-nav .active > a, .navbar-nav .active > a:hover, .navbar-nav .active > a:focus {
+        color: $light-color !important;
+        @include background-color($primary-color !important);        
+    }
+
+    button {
+        @include border(1px, $primary-color !important, all);
+        span {
+            @include background-color($primary-color !important);
+        }
+        
+        &:hover {
+            @include background-color($primary-color !important);
+            span {
+                @include background-color(#fff !important);
+            }
+        }
+    }
+}
+
+

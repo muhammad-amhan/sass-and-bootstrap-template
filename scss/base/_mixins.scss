@@ -1,0 +1,72 @@
+
+@mixin borderRad($rad) {
+    -webkit-border-radius: $rad;
+       -moz-border-radius: $rad;
+         -o-border-radius: $rad;
+            border-radius: $rad;
+}
+
+@mixin border($size, $color, $position) {
+
+  @if ($position == 'all') {
+    border: $size solid $color;
+  } 
+  @else if ($position == 'top') {
+    border-top: $size solid $color; 
+  }
+  @else if ($position == 'bottom') {
+    border-bottom: $size solid $color; 
+  }
+  @else if ($position == 'right') {
+    border-right: $size solid $color; 
+  }
+  @else if ($position == 'left') {
+    border-left: $size solid $color; 
+  }
+  @else if ($position == 'top-bottom') {
+    border-top: $size solid $color; 
+    border-bottom: $size solid $color; 
+  }
+  @else if ($position == 'right-left') {
+    border-right: $size solid $color; 
+    border-left: $size solid $color; 
+  }
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+  @if ($color == $light-color or $color == #ccc or $color == #ddd or $color == #eee or $color == $secondary-color) {
+    color: #333;
+  }
+  @else if ($color == $dark-color or $color == $primary-color) {
+    color: #fff;
+  }
+}
+
+@mixin flex($dir, $wrap, $justify) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+@mixin shadow($y, $x, $blur, $spread, $type) {
+  -webkit-box-shadow: $y $x $blur $spread #333 $type !important;
+  -moz-box-shadow: $y $x $blur $spread #333 $type !important;
+   -ms-box-shadow: $y $x $blur $spread #333 $type !important;
+    -o-box-shadow: $y $x $blur $spread #333 $type !important;
+       box-shadow: $y $x $blur $spread #333 $type !important;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+@mixin animate($name, $duration, $type) {
+  -webkit-animation: $name $duration $type;
+     -moz-animation: $name $duration $type;
+      -ms-animation: $name $duration $type;
+       -o-animation: $name $duration $type;
+          animation: $name $duration $type;
+}
+

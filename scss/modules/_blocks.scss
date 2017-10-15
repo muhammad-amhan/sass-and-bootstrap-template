@@ -1,0 +1,71 @@
+
+.block {
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+}
+
+.block-primary {
+    @include background-color($primary-color);
+}
+
+.block-secondary {
+    @include background-color($secondary-color);
+}
+
+.block-dark {
+    @include background-color($dark-color);
+}
+
+.block-light {
+    @include background-color($light-color);
+}
+
+.block-center {
+    text-align: center !important;
+}
+
+
+.block-image img {
+    width: 100%;
+}
+
+.block-border {
+    @include border(1px, $dark-color, all);
+}
+
+
+.block-primary-head {
+    h3 {
+        padding: 15px;
+        margin-bottom: -10px;
+        @include background-color($primary-color);
+    }
+
+    .block-content {
+        padding: 10px;
+        @include border(3px, $primary-color, all);
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            margin-bottom: -12px;
+        }
+    }
+}
+
+.block-icon {
+    .icon {
+        float: left;
+        width: 20%;
+    }
+
+    .icon-content {
+        float: left;
+        width: 70%;
+    }
+}
+
+.block-shadow {
+    @include shadow(4px, 4px, 8px, 2px, outset);
+}

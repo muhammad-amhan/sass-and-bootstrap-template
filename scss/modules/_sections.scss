@@ -1,0 +1,71 @@
+
+
+section {
+    padding: 30px 10px;
+}
+
+.section-showcase {
+    height: $showcase-height;
+    background: url('../images/#{$showcase-img}.jpg') no-repeat 30% 10% fixed;
+
+    .showcase-content {
+        margin-top: 60px;
+        text-align: center;
+
+        h1 {
+            color: $primary-color;
+        }
+    }
+
+    .downloads {
+        > a {
+            padding-left: 20px;
+        }
+    }
+}
+
+.section-primary {
+    @include background-color($primary-color);
+}
+
+.section-secondary {
+    @include background-color($secondary-color);
+}
+
+.section-light {
+    @include background-color($light-color);
+}
+
+.section-dark {
+    @include background-color($dark-color);
+}
+
+.section-primary-a {
+    @extend .section-primary;
+    @include border(2px, $secondary-color, top);
+}
+
+.section-primary-b {
+    @extend .section-primary;
+    @include border(2px, $secondary-color, bottom);
+}
+
+.section-light-a {
+    @extend .section-light;
+    @include border(2px, $primary-color, top);
+}
+
+.section-light-b {
+    @extend .section-light;
+    @include border(2px, $primary-color, bottom);
+}
+
+.section-light-c {
+    @extend .section-light;
+    @include border(2px, $secondary-color, top);
+}
+
+.section-light-d {
+    @extend .section-light;
+    @include border(2px, $secondary-color, bottom);
+}

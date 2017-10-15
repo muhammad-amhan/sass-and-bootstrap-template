@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bootstrap and sass Temp</title>
+
+        <!---->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header-main">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!---->
+        <section class="section-light top-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="search" action="" method="">
+                            <div>
+                                <input type="search" placeholder="Search...">
+                                <button type="submit" value=""><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <section class="section-primary-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Fusce imperdiet odio eu molestie elementum.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <section class="section-main">
+            <div class="container">
+                <div class="row">
+                    <!---->
+                    <div class="col-md-8">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                                  
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/slide1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Nullam feugiat posuere lacus, et imperdiet eros vulputate at.
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="item">
+                                    <img src="images/slide2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Fusce vitae nisi varius, maximus eros id, accumsan tellus.
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/slide3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Donec scelerisque luctus nunc vitae maximus.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+
+                        <!---->
+                        <h2 class="page-header heading-primary-a">About</h2>
+                        <p>
+                            In condimentum dui sit amet neque venenatis, ac ornare ipsum sodales. Aenean ac sem mi. Etiam varius ultrices ex efficitur lobortis. Sed sed libero non metus placerat fermentum. Etiam quis mauris at lectus malesuada finibus. Nam aliquam eros leo. Nullam dignissim, erat sit amet sodales auctor, augue justo commodo mauris, id posuere orci mauris eget purus.
+                        </p>
+                        <p>
+                            Etiam tristique tincidunt ligula, sed sollicitudin ex viverra sed. Curabitur eu ullamcorper nisi. In hac habitasse platea dictumst. Fusce vitae nisi varius, maximus eros id, accumsan tellus. Nulla elementum magna ex. Fusce imperdiet odio eu molestie elementum. Vestibulum convallis, magna eget vulputate placerat, sapien odio auctor risus, sed ultrices orci urna id enim. 
+                        </p>
+                    </div>
+
+                    <!---->
+                    <div class="col-md-4">
+                        <!---->
+                        <h2 class="page-header">Nam Feugiat</h2>
+                        <!---->
+                        <ul class="list list-feature">
+                            <li><i class="fa fa-check fa-5 fa-primary"></i><span>Aenean ac sem mi.</span></li>
+                            <li><i class="fa fa-check fa-5 fa-primary"></i><span>Aenean ac sem mi.</span></li>
+                            <li><i class="fa fa-check fa-5 fa-primary"></i><span>Aenean ac sem mi.</span></li>
+                            <li><i class="fa fa-check fa-5 fa-primary"></i><span>Aenean ac sem mi.</span></li>
+                        </ul>
+
+                        <!---->
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <spna class="em-primary">Who</spna> We Are?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Quisque eu lacus quam. Donec scelerisque luctus nunc vitae maximus. Mauris a nulla a velit laoreet commodo. Donec ac tristique tortor, vitae finibus lectus. Fusce volutpat efficitur ornare. Proin placerat rhoncus quam, interdum accumsan magna ultricies sed. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <spna class="em-primary">What</spna> We Do?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Ut a tincidunt neque. Curabitur fermentum finibus ipsum sit amet tristique. Praesent in ullamcorper eros. Pellentesque interdum gravida est, sit amet rutrum quam molestie eget. 
+                                        </p>
+                                        <p>
+                                            Pellentesque mollis aliquam ullamcorper. Vestibulum tincidunt massa vitae neque luctus bibendum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <spna class="em-primary">Why</spna> Choose Us?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Nunc gravida arcu vel bibendum faucibus. Aliquam ut nisl in lorem cursus posuere a eu purus. In justo ipsum, fringilla sed ipsum vel, egestas feugiat ligula. Nam pulvinar, nisl quis pellentesque eleifend, nisi enim efficitur felis, in pretium diam mi id arcu. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!---->
+        <section class="fix-margin-top">
+            <div class="container">
+                <div class="row">
+                    <h2 class="page-header">Meet The Team</h2>
+                    <div class="block-team">
+                        <div class="col-md-3">
+                            <!---->
+                            <div class="block block-light block-light block-center block-image block-shadow">
+                                <img src="images/headshot1.jpg" alt="team-memeber">
+                                <h3>Jannet Smith</h3>
+                                <p>
+                                    Nam feugiat hendrerit congue imperdiet eros Aenean sit amet placerat sem
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!---->
+                            <div class="block block-light block-center block-image block-shadow">
+                                <img src="images/headshot2.jpg" alt="team-memeber">
+                                <h3>Amanie Katsha</h3>
+                                <p>
+                                    Nam feugiat hendrerit congue imperdiet eros Aenean sit amet placerat sem
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!---->
+                            <div class="block block-light block-center block-image block-shadow">
+                                <img src="images/headshot3.jpg" alt="team-memeber">
+                                <h3>James Connor</h3>
+                                <p>
+                                    Nam feugiat hendrerit congue imperdiet eros Aenean sit amet placerat sem
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!---->
+                            <div class="block block-light block-center block-image block-shadow">
+                                <img src="images/headshot4.jpg" alt="team-memeber">
+                                <h3>Ahmad Hussain</h3>
+                                <p>
+                                    Nam feugiat hendrerit congue imperdiet eros Aenean sit amet placerat sem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <section class="section-primary-b">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <blockquote class="blockquote blockquote-reverse">
+                            <h1>"Etiam tristique tincidunt ligula, sed sollicitudin ex viverra sed. Curabitur eu ullamcorper nisi. In hac habitasse platea dictumst."</h1>
+                            <em>Someone</em>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="block block-light block-center">
+                            <i class="fa fa-html5 fa-primary fa-border fa-6"></i>
+                            <h3 class="heading-primary">Nam Pulvinar</h3>
+                            <p>Aenean ac sem mi. Etiam varius ultrices ex efficitur lobortis. Sed sed libero non metus placerat fermentum. Etiam quis mauris at lectus malesuada finibus.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="block block-light block-center">
+                            <i class="fa fa-pie-chart fa-primary fa-border fa-6"></i>
+                            <h3 class="heading-primary">Convallis</h3>
+                            <p>Nam aliquam eros leo. Nullam dignissim, erat sit amet sodales auctor, augue justo commodo mauris, id posuere orci mauris eget purus amet sodales auctor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="block block-light block-center">
+                            <i class="fa fa-unlock-alt fa-primary fa-border fa-6"></i>
+                            <h3 class="heading-primary">Venenatis</h3>
+                            <p>Etiam tristique tincidunt amet sodales auctor ligula, sed sollicitudin ex viverra sed. Curabitur eu ullamcorper nisi. In hac habitasse platea dictumst.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="block block-light block-center">
+                            <i class="fa fa-question-circle fa-primary fa-border fa-6"></i>
+                            <h3 class="heading-primary">Congue</h3>
+                            <p>Quisque eu lacus quam. Donec scelerisque luctus nunc vitae maximus. Mauris a nulla a velit laoreet commodo. Donec ac tristique tortor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <footer class="footer-main section-light-a extra-pad"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Get the Service</h4>
+                        <!---->
+                        <ul>
+                            <li class="app-appstore"><a href="#"> Nam aliquam</a></li>
+                            <li class="app-play"><a href="#">Malesuada finibus</a></li>
+                            <li class="app-droid"><a href="#">In condimentum dui</a></li>
+                            <li class="app-chrome"><a href="#">Fusce vitae nisi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 border-left">
+                        <h4>About</h4>
+                        <!---->
+                        <ul>
+                            <li class="app-appstore"><a href="#">Sed sed libero non metus.</a></li>
+                            <li class="app-play"><a href="#">Placerat fermentum</a></li>
+                            <li class="app-droid"><a href="#">Nam aliquam eros leo</a></li>
+                            <li class="app-chrome"><a href="#">Nullam dignissim</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 border-left">
+                        <h4>Support</h4>
+                        <!---->
+                        <ul>
+                            <li class="app-appstore"><a href="#">Vestibulum convallis</a></li>
+                            <li class="app-play"><a href="#">Nullam sollicitudin</a></li>
+                            <li class="app-droid"><a href="#">Fusce finibus elementum</a></li>
+                            <li class="app-chrome"><a href="#">Vestibulum vel odio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!---->
+        <footer class="footer-copy pad-all">
+                <div class="container">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2017. All Rights Reserved. </p>
+                    </div> 
+                </div>
+        </footer>
+
+        <!-- -->
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

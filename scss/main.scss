@@ -1,0 +1,27 @@
+/*
+        Bootstrap and sass template
+        Version 1.0 
+        Date 13/09/2017
+        Developer Muhammad Amhan
+*/
+
+// Importing the base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/base';
+
+// Importing the layouts
+@import 'layouts/header';
+@import 'layouts/nav';
+@import 'layouts/footer';
+@import 'layouts/blog';
+@import 'layouts/mobile';
+
+// Importing the modules
+@import 'modules/typography';
+@import 'modules/blocks';
+@import 'modules/sections';
+@import 'modules/components';
+@import 'modules/buttons';
+@import 'modules/form';

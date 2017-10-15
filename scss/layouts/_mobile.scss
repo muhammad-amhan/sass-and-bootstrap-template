@@ -1,0 +1,240 @@
+
+
+@media (max-width: 568px) {
+
+    h1, h2 { 
+        font-size: $h-main-size !important;
+        text-align: center !important;
+    }
+
+    h3, h4, h5 {
+        font-size: $h-secondary-size !important;
+    }
+
+    p {
+        font-size: $p-main-size !important;
+    }
+
+    .showcase-content {
+        line-height: 1;
+
+        h1 {
+            font-size: $h-main-size + 4;
+        }
+
+        .downloads {
+            > a {
+                display: block;
+                padding-top: 10px;
+                padding-left: 0 !important;
+                margin-left: -10px;
+            }
+        }
+    }
+
+    .list-feature {
+
+        > li {
+            > span {
+                font-size: $p-main-size + 2 !important;
+            }
+        }
+    }
+
+    .btn-responsive {
+        width: 100% !important;
+        padding: 8px;
+        font-size: $p-main-size + 2;
+    }
+
+    .page-header {
+        text-align: center;
+    }
+    
+    .block-team {
+        @include flex(column, wrap, none);
+        margin-top: -20px;
+
+        .col-md-3 {
+            width: 70%;
+            margin: auto;
+        }
+
+        img {
+            width: 100% !important;
+        }
+    }
+
+    .footer-main {
+        h4 {
+            font-size: $h-secondary-size !important;
+        }
+        a {
+            font-size: $p-main-size !important;
+        }
+    }
+}
+
+
+@media (max-width: 668px) {
+    h1, h2 { 
+        font-size: 24px;
+        text-align: center !important;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4, h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .block {
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .post-meta {
+        span {
+            display: block; 
+        } 
+    }
+
+    .footer-main {
+        .row {
+            @include flex(column !important, wrap, none);
+            text-align: center;
+
+            .border-left {
+                border: none;
+            }
+            
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        text-align: center;
+    }
+
+    .page-header {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .device-small {
+        display: block;
+        margin-bottom: 20px !important;
+        margin: auto;
+    }
+
+    blockquote {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .block-team {
+        @include flex(default, wrap, none);
+
+        .col-md-3 {
+            flex-basis: 50%;
+        }
+
+        img {
+            width: 70% !important;
+        }
+    }
+
+    .search {
+        input[type="search"] {
+            width: 70% !important;
+            height: 35px !important;
+        }
+
+        button[type="submit"] {
+            height: 35px !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 990px) {
+
+    h1, h2 { 
+        font-size: 27px;
+        text-align: center !important;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4, h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .list-feature {
+        @include background-color($light-color);
+        padding: 10px !important;
+        line-height: 1.8 !important;
+
+        > li {
+            width: 100% !important;
+            border: none !important;
+            text-align: center;
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    blockquote {
+        h1 {
+            font-size: 27px;
+        }
+    }
+
+    .block-team {
+        display: flex;
+        img {
+            width: 70% !important;
+        }
+    }
+
+    .border-bottom {
+        @include border(2px, #eee, bottom);
+        padding-bottom: 15px;
+        margin-bottom: -30px;
+    }
+
+    .btn-center {
+        width: 150px;
+        display: block;
+        margin: auto !important;
+    }
+
+    .footer-main {
+        .row {
+            @include flex(row, default, space-between);
+        }
+    }
+}
